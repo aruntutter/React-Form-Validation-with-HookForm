@@ -7,7 +7,7 @@ const RegistrationForm = () => {
   const {
     control,
     handleSubmit,
-    formState: { errors, isDirty }, // Destructured formState correctly
+    formState: { errors, isDirty },
     getValues,
   } = useForm();
 
@@ -102,7 +102,7 @@ const RegistrationForm = () => {
             rules={{
               required: "Confirm Password is required",
               validate: (value) =>
-                value === getValues("password") || "Passwords do not match",
+                value === getValues("password") || "Password must be matched",
             }}
             render={({ field }) => <input type="password" {...field} />}
           />
@@ -112,7 +112,7 @@ const RegistrationForm = () => {
         </div>
 
         <button type="submit" disabled={!isDirty}>
-          Submit
+          Sign Up
         </button>
       </form>
     </div>
