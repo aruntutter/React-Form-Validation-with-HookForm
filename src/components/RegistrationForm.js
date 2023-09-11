@@ -7,10 +7,9 @@ const RegistrationForm = () => {
   const {
     control,
     handleSubmit,
-    formState: { errors, isDirty },
-  } = useForm({
-    mode: "onChange",
-  });
+    formState: { errors, isDirty }, // Destructured formState correctly
+    getValues,
+  } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
@@ -103,8 +102,7 @@ const RegistrationForm = () => {
             rules={{
               required: "Confirm Password is required",
               validate: (value) =>
-                value === control.getValues("password") ||
-                "Passwords do not match",
+                value === getValues("password") || "Passwords do not match",
             }}
             render={({ field }) => <input type="password" {...field} />}
           />
