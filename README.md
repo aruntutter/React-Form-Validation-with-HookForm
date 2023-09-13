@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Registration Form
+
+## Introduction
+
+The `RegistrationForm` is a React-based form that allows users to register with their username, phone number, email, password, and confirm password. It utilizes the `react-hook-form` library for efficient form handling.
+
+## Features
+
+- User-friendly form validation for each field.
+- Submission success card with a confirmation message.
+
+## Links
+
+- Solution URL: [GitHub Repository](https://github.com/aruntutter/React-Form-Validation-with-HookForm)
+- Live Demo: [Live Demo URL](https://cerulean-babka-c83a21.netlify.app/)
+
+## Screenshot
+
+![Screenshot 1](./src/assets/images/form-ss.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
