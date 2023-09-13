@@ -90,6 +90,9 @@ button:disabled {
 @media (max-width: 768px) {
   .form-container {
     width: 90%;
-    /* Adjusted for smaller screens */
+  }
+
+  .card {
+    width: 80%;
   }
 }
